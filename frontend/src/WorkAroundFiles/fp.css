@@ -1,0 +1,45 @@
+.triangle{
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 250px solid black;
+    border-bottom-left-radius:350px;   
+    border-bottom-right-radius:350px;   
+
+    margin: 50px;
+}
+.semicircle{
+    position:absolute;
+    height: 50px;
+    width:250px;
+    background-color: black;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    left:400px;
+    top:386px;
+    transform-origin: right;
+    transform: rotate(-315deg);
+
+}
+.circle{
+    height:400px;
+    width: 400px;
+   
+    /*clip-path:polygon(50px 0px, 11px 100px, 94px 100px);*/
+    /* clip-path: polygon(25% 0%,50% 0%,75% 25%,50% 50%,25% 50%,0% 25%);  */
+
+ 
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Half the base of the triangle */
+    border-right: 50px solid transparent; /* Half the base of the triangle */
+    border-bottom: 100px solid #007bff; /* Height of the triangle */
+    border-top-left-radius: 25px; /* Adjust this value for the desired roundness */
+    border-top-right-radius: 25px; 
+    clip-path:polygon(25% 0%,75% 25%,0% 25%)
+  }
+
